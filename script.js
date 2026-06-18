@@ -11,6 +11,7 @@ function validateContactForm(event) {
   const name = document.getElementById('nameInput').value.trim();
   const phone = document.getElementById('phoneInput').value.trim();
   const address = document.getElementById('addressInput').value.trim();
+  //validates a Kenyan number...must start with either 0 or +254//
   const phonePattern = /^(\+254|0)[17]\d{8}$/;
 
   let isValid = true;
