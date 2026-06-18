@@ -43,7 +43,7 @@ function validateContactForm(event) {
   }
 }
 
-// ---- RUN ON PAGE LOAD ----
+
 document.addEventListener('DOMContentLoaded', function () {
   // Restore dark mode if it was saved on a previous page
   if (localStorage.getItem('ca-theme') === 'dark') {
