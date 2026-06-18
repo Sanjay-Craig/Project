@@ -301,7 +301,9 @@ a:hover {
 .shoe-card-wrapper {
   position: relative;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 /* ---- 12. RESPONSIVE TWEAKS ---- */
 @media (max-width: 768px) {
   .hero h1 {
