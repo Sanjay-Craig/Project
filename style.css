@@ -1,20 +1,14 @@
-/* =========================================================
-   C&A - Shared Stylesheet
-   Used by every page. Defines colors, fonts, and reusable
-   components (navbar, footer, cards, buttons, forms).
-   ========================================================= */
 
-/* ---- 1. CSS VARIABLES (our color & spacing "settings") ---- */
 :root {
-  --color-dark: #1a1a1a;        /* charcoal - header/footer/dark mode bg */
-  --color-light: #faf7f2;       /* warm off-white - light mode bg */
-  --color-accent: #d9622b;      /* burnt orange - buttons, links, prices */
-  --color-accent-dark: #b54e1f; /* darker orange for hover states */
-  --color-text-muted: #6b6b6b;  /* gray - secondary text */
-  --color-success: #3a7d44;     /* green - "in stock" / success messages */
-  --color-danger: #c0392b;      /* red - form error messages */
-  --color-card-bg: #ffffff;     /* white - card backgrounds */
-  --radius: 10px;               /* rounded corner size used everywhere */
+  --color-dark: #1a1a1a;        
+  --color-light: #faf7f2;      
+  --color-accent: #d9622b;      
+  --color-accent-dark: #b54e1f; 
+  --color-text-muted: #6b6b6b;  
+  --color-success: #3a7d44;     
+  --color-danger: #c0392b;      
+  --color-card-bg: #ffffff;     
+  --radius: 10px;               
 }
 
 /* Dark mode overrides: when <body> has class "dark-mode",
@@ -26,7 +20,7 @@ body.dark-mode {
   --color-text-muted: #b0b0b0;
 }
 
-/* ---- 2. GLOBAL BASE STYLES ---- */
+
 body {
   font-family: 'Inter', sans-serif;
   background-color: var(--color-light);
@@ -97,7 +91,6 @@ a:hover {
   background-color: rgba(217, 98, 43, 0.2);
 }
 
-/* ---- 4. HERO SECTION (used on Home page) ---- */
 .hero {
   background-color: var(--color-dark);
   color: #fff;
