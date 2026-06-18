@@ -1,0 +1,321 @@
+/* =========================================================
+   C&A - Shared Stylesheet
+   Used by every page. Defines colors, fonts, and reusable
+   components (navbar, footer, cards, buttons, forms).
+   ========================================================= */
+
+/* ---- 1. CSS VARIABLES (our color & spacing "settings") ---- */
+:root {
+  --color-dark: #1a1a1a;        /* charcoal - header/footer/dark mode bg */
+  --color-light: #faf7f2;       /* warm off-white - light mode bg */
+  --color-accent: #d9622b;      /* burnt orange - buttons, links, prices */
+  --color-accent-dark: #b54e1f; /* darker orange for hover states */
+  --color-text-muted: #6b6b6b;  /* gray - secondary text */
+  --color-success: #3a7d44;     /* green - "in stock" / success messages */
+  --color-danger: #c0392b;      /* red - form error messages */
+  --color-card-bg: #ffffff;     /* white - card backgrounds */
+  --radius: 10px;               /* rounded corner size used everywhere */
+}
+
+/* Dark mode overrides: when <body> has class "dark-mode",
+   these variables get replaced, so every element using
+   var(--color-light) etc. automatically updates. */
+body.dark-mode {
+  --color-light: #1a1a1a;
+  --color-card-bg: #2a2a2a;
+  --color-text-muted: #b0b0b0;
+}
+
+/* ---- 2. GLOBAL BASE STYLES ---- */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--color-light);
+  color: #222;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+  color: #f0f0f0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-accent-dark);
+}
+
+/* ---- 3. NAVBAR ---- */
+.navbar-soleva {
+  background-color: var(--color-dark);
+  padding: 0.9rem 0;
+}
+
+.navbar-soleva .navbar-brand {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+.navbar-soleva .navbar-brand span {
+  color: var(--color-accent);
+}
+
+.navbar-soleva .nav-link {
+  color: #e0e0e0;
+  font-weight: 500;
+  margin: 0 0.4rem;
+}
+
+.navbar-soleva .nav-link:hover,
+.navbar-soleva .nav-link.active {
+  color: var(--color-accent);
+}
+
+/* Theme toggle button in the navbar */
+.theme-toggle-btn {
+  background: none;
+  border: 1px solid #555;
+  color: #e0e0e0;
+  border-radius: 50px;
+  padding: 0.35rem 0.9rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.theme-toggle-btn:hover {
+  background-color: rgba(217, 98, 43, 0.2);
+}
+
+/* ---- 4. HERO SECTION (used on Home page) ---- */
+.hero {
+  background-color: var(--color-dark);
+  color: #fff;
+  padding: 5rem 0;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  color: #fff;
+}
+
+.hero p.lead {
+  color: #cfcfcf;
+}
+
+.btn-accent {
+  background-color: var(--color-accent);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.65rem 1.8rem;
+  border-radius: var(--radius);
+  transition: background-color 0.2s ease;
+}
+
+.btn-accent:hover {
+  background-color: var(--color-accent-dark);
+  color: #fff;
+}
+
+.btn-outline-accent {
+  border: 2px solid var(--color-accent);
+  color: var(--color-accent);
+  font-weight: 600;
+  padding: 0.6rem 1.7rem;
+  border-radius: var(--radius);
+  background: transparent;
+}
+
+.btn-outline-accent:hover {
+  background-color: var(--color-accent);
+  color: #fff;
+}
+
+/* ---- 5. SHOE / PRODUCT CARDS ---- */
+.shoe-card {
+  background-color: var(--color-card-bg);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  height: 100%;
+}
+
+.shoe-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.shoe-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.shoe-card-body {
+  padding: 1.1rem;
+}
+
+.shoe-card-body h5 {
+  margin-bottom: 0.2rem;
+}
+
+.shoe-brand-label {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Price tag - the "signature element" of the site */
+.price-tag {
+  display: inline-block;
+  background-color: var(--color-accent);
+  color: #fff;
+  font-weight: 700;
+  padding: 0.3rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+}
+
+/* ---- 6. SECTION SPACING ---- */
+.section {
+  padding: 4rem 0;
+}
+
+.section-title {
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.section-title h2 {
+  font-size: 2rem;
+}
+
+.section-title p {
+  color: var(--color-text-muted);
+}
+
+/* ---- 7. FOOTER ---- */
+.footer-soleva {
+  background-color: var(--color-dark);
+  color: #cfcfcf;
+  padding: 2.5rem 0 1.2rem;
+  margin-top: 3rem;
+}
+
+.footer-soleva h5 {
+  color: #fff;
+}
+
+.footer-soleva a {
+  color: #cfcfcf;
+}
+
+.footer-soleva a:hover {
+  color: var(--color-accent);
+}
+
+.footer-bottom {
+  border-top: 1px solid #3a3a3a;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  font-size: 0.85rem;
+  text-align: center;
+  color: #888;
+}
+
+/* ---- 8. CONTACT FORM ---- */
+.contact-form .form-control {
+  border-radius: var(--radius);
+  padding: 0.6rem 0.9rem;
+}
+
+.contact-form .form-control:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 0.2rem rgba(217, 98, 43, 0.2);
+}
+
+.error-message {
+  color: var(--color-danger);
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+  display: none; /* JS will show this only when there's an error */
+}
+
+.form-success-message {
+  color: var(--color-success);
+  font-weight: 600;
+  margin-top: 1rem;
+  display: none; /* JS will reveal this after a successful submit */
+}
+
+/* ---- 9. FAQ ACCORDION TWEAKS ---- */
+.accordion-button:not(.collapsed) {
+  background-color: rgba(217, 98, 43, 0.1);
+  color: var(--color-accent-dark);
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: var(--color-accent);
+}
+
+/* ---- 10. GALLERY ---- */
+.gallery-img {
+  border-radius: var(--radius);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.gallery-img img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-img:hover img {
+  transform: scale(1.05);
+}
+
+/* ---- 11. BADGES (offers page) ---- */
+.discount-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background-color: var(--color-success);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+  z-index: 2;
+}
+
+.shoe-card-wrapper {
+  position: relative;
+}
+
+/* ---- 12. RESPONSIVE TWEAKS ---- */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.1rem;
+  }
+  .hero {
+    padding: 3.5rem 0;
+    text-align: center;
+  }
+}
