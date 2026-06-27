@@ -5,13 +5,14 @@ function toggleTheme() {
   const btn = document.getElementById('themeToggleBtn');
   btn.textContent = isDark ? 'Light Mode' : 'Dark Mode';
 }
+//validation Form
 function validateContactForm(event) {
   event.preventDefault(); // stop page from reloading on submit
 
   const name = document.getElementById('nameInput').value.trim();
   const phone = document.getElementById('phoneInput').value.trim();
   const address = document.getElementById('addressInput').value.trim();
-  //validates a Kenyan number...must start with either 0 or +254//
+  //validates a Kenyan number,must start with either 0 or +254//
   const phonePattern = /^(\+254|0)[17]\d{8}$/;
 
   let isValid = true;
@@ -48,14 +49,14 @@ document.addEventListener('DOMContentLoaded', function () {
   // Restore dark mode if it was saved on a previous page
   if (localStorage.getItem('ca-theme') === 'dark') {
     document.body.classList.add('dark-mode');
-    document.getElementById('themeToggleBtn').textContent = '☀️ Light Mode';
+    document.getElementById('themeToggleBtn').textContent = ' Light Mode';
   }
 
-  // Connect the dark mode button (if this page has one)
+  // Connect the dark mode button 
   const themeBtn = document.getElementById('themeToggleBtn');
   if (themeBtn) themeBtn.addEventListener('click', toggleTheme);
 
-  // Connect the contact form (only exists on contact.html)
+  // Connect the contact form 
   const contactForm = document.getElementById('contactForm');
   if (contactForm) contactForm.addEventListener('submit', validateContactForm);
 });
