@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Shop genuine sneakers at C&A - Nike, Adidas, Puma ,Jordans and  Vans at honest prices.">
+  <meta name="description" content="Shop genuine sneakers at C&A — Nike, Adidas, Puma, Jordans and Vans at honest prices in Nairobi.">
   <title>C&amp;A | Shop</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,16 +12,19 @@
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-soleva navbar-dark sticky-top">
+  <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+
+  <nav class="navbar navbar-expand-lg navbar-soleva navbar-dark sticky-top" role="navigation" aria-label="Main navigation">
     <div class="container">
-      <a class="navbar-brand" href="index.html">C<span>&amp;</span>A</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <a class="navbar-brand" href="index.html" aria-label="C&A Home">C<span>&amp;</span>A</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navMenu">
         <ul class="navbar-nav ms-auto align-items-lg-center">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link active" href="product.html">Product</a></li>
+          <li class="nav-item"><a class="nav-link active" href="product.html" aria-current="page">Product</a></li>
           <li class="nav-item"><a class="nav-link" href="brands.html">Brands</a></li>
           <li class="nav-item"><a class="nav-link" href="offers.html">Offers</a></li>
           <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
@@ -29,616 +32,648 @@
           <li class="nav-item"><a class="nav-link" href="faqs.html">FAQs</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
           <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
-            <button id="themeToggleBtn" class="theme-toggle-btn">Dark Mode</button>
+            <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Toggle dark mode">Dark Mode</button>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <header class="hero" style="padding: 3.5rem 0;">
-    <div class="container text-center">
-      <h1 style="font-size:2.2rem;">Our Shoes</h1>
-      <p class="lead mb-0">Genuine kicks, honest prices. Pick your pair.</p>
+  <!-- Enquiry Offcanvas -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="enquiryOffcanvas" aria-labelledby="enquiryOffcanvasLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="enquiryOffcanvasLabel">Enquire About a Shoe</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close enquiry panel"></button>
     </div>
-  </header>
-
-  <section class="section">
-    <div class="container">
-      <div class="row g-4">
-
-        <div class="col-md-4">
-          <div class="shoe-card">
-            <img src="images/Nike mind 001.jpg" alt="Nike Mind 001" loading="lazy">
-            <div class="shoe-card-body">
-              <p class="shoe-brand-label">Nike</p>
-              <h5>Nike Mind 001</h5>
-              <p class="text-muted mb-1">Sizes 32–45</p>
-              <span class="price-tag">KES 6,000</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="shoe-card">
-            <img src="images/Air Force 1 x Offwhite yellow.jpg" alt="Air Force 1 x Offwhite yellow" loading="lazy">
-            <div class="shoe-card-body">
-              <p class="shoe-brand-label">Nike</p>
-              <h5>Air Force 1 x Offwhite yellow</h5>
-              <p class="text-muted mb-1">Sizes 32–44</p>
-              <span class="price-tag">KES 4,000</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="shoe-card">
-            <img src="images/AJ1 Low Cherrywood.jpg" alt="AJ1 Low Cherrywood" loading="lazy">
-            <div class="shoe-card-body">
-              <p class="shoe-brand-label">Nike</p>
-              <h5>AJ1 Low Cherrywood</h5>
-              <p class="text-muted mb-1">Sizes 32–43</p>
-              <span class="price-tag">KES 4,000</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="shoe-card">
-            <img src="images/AJ5 Retro Black.jpg" alt="AJ5 Retro Black" loading="lazy">
-            <div class="shoe-card-body">
-              <p class="shoe-brand-label">Nike</p>
-              <h5>AJ5 Retro Black</h5>
-              <p class="text-muted mb-1">Sizes 32–44</p>
-              <span class="price-tag">KES 4,500</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="shoe-card">
-            <img src="images/Nike Air Jordan 1 Mid Digital Pink.jpg" alt="Nike Air Jordan 1 Mid Digital Pink" loading="lazy">
-            <div class="shoe-card-body">
-              <p class="shoe-brand-label">Nike</p>
-              <h5>Nike Air Jordan 1 Mid Digital Pink</h5>
-              <p class="text-muted mb-1">Sizes 32–46</p>
-              <span class="price-tag">KES 4,500</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="shoe-card">
-            <img src="images/Jordan 4 Red Brick.jpg" alt="Jordan 4 Red Brick " loading="lazy">
-            <div class="shoe-card-body">
-              <p class="shoe-brand-label">Nike</p>
-              <h5>Jordan 4 Red Brick</h5>
-              <p class="text-muted mb-1">Sizes 32–44</p>
-              <span class="price-tag">KES 4,500</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="shoe-card">
-            <img src="images/Air Jordan 4 flight Club.jpg" alt="Air Jordan 4 flight Club" loading="lazy">
-            <div class="shoe-card-body">
-              <p class="shoe-brand-label">Air Jordans</p>
-              <h5>Air Jordan 4 flight Club</h5>
-              <p class="text-muted mb-1">Sizes 32–45</p>
-              <span class="price-tag">KES 4,000</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="shoe-card">
-            <img src="images/Nike Air Force 1 Low Shadow White Pink Magic Flamingo .jpg" alt="Nike Air force 1 Low Shadow White Pink Magic Flamingo" loading="lazy">
-            <div class="shoe-card-body">
-              <p class="shoe-brand-label">Nike</p>
-              <h5>Nike Air Force 1 Low Shadow White Pink Magic Flamingo</h5>
-              <p class="text-muted mb-1">Sizes 32–45</p>
-              <span class="price-tag">KES 5,000</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="shoe-card">
-            <img src="images/Nike Air Force 1 Lil Yatchy .jpg" alt="Nike Air Force 1 Lil Yatchy" loading="lazy">
-            <div class="shoe-card-body">
-              <p class="shoe-brand-label">Nike</p>
-              <h5>Nike Air Force 1 Lil Yatchy</h5>
-              <p class="text-muted mb-1">Sizes 32–44</p>
-              <span class="price-tag">KES 4,500</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="shoe-card">
-            <img src="images/Nike Air Force 1 Low x Syna.jpg" alt="Nike Air Force 1 Low xSyna" loading="lazy">
-            <div class="shoe-card-body">
-              <p class="shoe-brand-label">Nike</p>
-              <h5>Nike Air Force 1 Low xSyn</h5>
-              <p class="text-muted mb-1">Sizes 32–44</p>
-              <span class="price-tag">KES 4,500</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="shoe-card">
-            <img src="images/Nike Air Force 1 Blue Void .jpg" alt="Nike Air Force 1 Blue Void" loading="lazy">
-            <div class="shoe-card-body">
-              <p class="shoe-brand-label">Nike</p>
-              <h5>Nike Air Force 1 Blue Void</h5>
-              <p class="text-muted mb-1">Sizes 32–44</p>
-              <span class="price-tag">KES 4,000</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="shoe-card">
-            <img src="images/Nike Air Jordan 1 Low WMNS Canyon Rust .jpg" alt="Nike Air Jordan 1 Low WMNS  Canyon Rust" loading="lazy">
-            <div class="shoe-card-body">
-              <p class="shoe-brand-label">Nike</p>
-              <h5>Nike Air Jordan 1 Low WMNS Canyon Rust</h5>
-              <p class="text-muted mb-1">Sizes 32–44</p>
-              <span class="price-tag">KES 5,200</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="shoe-card">
-            <img src="images/Nike SB x Air Jordan 1.jpg" alt="Nike SB x Air Jordan 1" loading="lazy">
-            <div class="shoe-card-body">
-              <p class="shoe-brand-label">Nike</p>
-              <h5>Nike SB x Air Jordan 1</h5>
-              <p class="text-muted mb-1">Sizes 32–44</p>
-              <span class="price-tag">KES 4,500</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="shoe-card">
-            <img src="images/Jordan retro 4.jpg" alt="Jordan retro 4" loading="lazy">
-            <div class="shoe-card-body">
-              <p class="shoe-brand-label">Jordans</p>
-              <h5>Jordan retro 4</h5>
-              <p class="text-muted mb-1">Sizes 32–44</p>
-              <span class="price-tag">KES 4,000</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="shoe-card">
-            <img src="images/Air Jordan 4 x Nike sb.jpg" alt="Air Jordan 4 x Nike sb" loading="lazy">
-            <div class="shoe-card-body">
-              <p class="shoe-brand-label">Jordans</p>
-              <h5>Air Jordan 4 x Nike sb</h5>
-              <p class="text-muted mb-1">Sizes 32–44</p>
-              <span class="price-tag">KES 4,300</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="shoe-card">
-            <img src="images/Nike SB Dunk Low Pro B.jpg" alt="Nike SB Dunk Low Pro B" loading="lazy">
-            <div class="shoe-card-body">
-              <p class="shoe-brand-label">Nike</p>
-              <h5>Nike SB Dunk Low Pro B</h5>
-              <p class="text-muted mb-1">Sizes 32–44</p>
-              <span class="price-tag">KES 4,200</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="shoe-card">
-            <img src="images/Nike Air Force 1 x Supreme Purple.jpg" alt="Nike Air Force 1 x Surpreme Purple" loading="lazy">
-            <div class="shoe-card-body">
-              <p class="shoe-brand-label">Nike</p>
-              <h5>Nike Air Force 1 x Surpreme Purple</h5>
-              <p class="text-muted mb-1">Sizes 32–44</p>
-              <span class="price-tag">KES 4,200</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="shoe-card">
-            <img src="images/Nike Air Force 1 x Surpreme Meangreen.jpg" alt="Nike Air Force 1 x Surpreme Meangreen" loading="lazy">
-            <div class="shoe-card-body">
-              <p class="shoe-brand-label">Nike</p>
-              <h5>Nike Air Force 1 x Surpreme Meangreen</h5>
-              <p class="text-muted mb-1">Sizes 32–44</p>
-              <span class="price-tag">KES 4,200</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="shoe-card">
-            <img src="images/Nike SB Dunk Yellow Bears.jpg" alt="Nike SB Dunk Yellow Bears" loading="lazy">
-            <div class="shoe-card-body">
-              <p class="shoe-brand-label">Nike</p>
-              <h5>Nike SB Dunk Yellow Bears</h5>
-              <p class="text-muted mb-1">Sizes 32–44</p>
-              <span class="price-tag">KES 4,000</span>
-            </div>
-          </div>
-        </div>
-
-       
-
-        <div class="col-md-4">
-          <div class="shoe-card">
-            <img src="images/Travis AJ1 Military blue.jpg" alt="Travis AJ1 Military blue" loading="lazy">
-            <div class="shoe-card-body">
-              <p class="shoe-brand-label">Nike</p>
-              <h5>Travis AJ1 Military blue</h5>
-              <p class="text-muted mb-1">Sizes 32–44</p>
-              <span class="price-tag">KES 4,800</span>
-            </div>
-          </div>
-        </div>
-
-         <div class="col-md-4">
-          <div class="shoe-card">
-            <img src="images/Travis Scott AJ1  Black Phantom Scarabee Noir.jpg" alt="Travis Scott AJ1 Black Phantom Scarabee Noir" loading="lazy">
-            <div class="shoe-card-body">
-              <p class="shoe-brand-label">Nike</p>
-              <h5>Travis Scott AJ1 Black Phantom Scarabee Noir</h5>
-              <p class="text-muted mb-1">Sizes 32–44</p>
-              <span class="price-tag">KES 4,800</span>
-            </div>
-          </div>
-        </div>
-
-         <div class="col-md-4">
-          <div class="shoe-card">
-            <img src="images/Travis Scott AJ1 Ridgerock.jpg" alt="Travis Scott AJ1 Ridgerock" loading="lazy">
-            <div class="shoe-card-body">
-              <p class="shoe-brand-label">Nike</p>
-              <h5>Travis Scott AJ1 Ridgerock</h5>
-              <p class="text-muted mb-1">Sizes 32–44</p>
-              <span class="price-tag">KES 4,800</span>
-            </div>
-          </div>
-        </div>
-
-         <div class="col-md-4">
-          <div class="shoe-card">
-            <img src="images/Travis Scott AJ1 Washed Pink.jpg" alt="Travis Scott AJ1 Washed Pink" loading="lazy">
-            <div class="shoe-card-body">
-              <p class="shoe-brand-label">Nike</p>
-              <h5>Travis Scott AJ1 Washed Pink</h5>
-              <p class="text-muted mb-1">Sizes 32–44</p>
-              <span class="price-tag">KES 4,800</span>
-            </div>
-          </div>
-        </div>
-
-         <div class="col-md-4">
-          <div class="shoe-card">
-            <img src="images/Travis Scott AJ1 Yellow Toe.jpg" alt="Travis Scott AJ1 Yellow Toe" loading="lazy">
-            <div class="shoe-card-body">
-              <p class="shoe-brand-label">Nike</p>
-              <h5>Travis Scott AJ1 Yellow Toe</h5>
-              <p class="text-muted mb-1">Sizes 32–44</p>
-              <span class="price-tag">KES 4,800</span>
-            </div>
-          </div>
-        </div>
-
-         <div class="col-md-4">
-          <div class="shoe-card">
-            <img src="images/Travis Scott Black Phantom AJ1.jpg" alt="Travis Scott Black Phantom AJ1" loading="lazy">
-            <div class="shoe-card-body">
-              <p class="shoe-brand-label">Nike</p>
-              <h5>Travis Scott Black Phantom AJ1 </h5>
-              <p class="text-muted mb-1">Sizes 32–44</p>
-              <span class="price-tag">KES 4,800</span>
-            </div>
-          </div>
-        </div>
-
-         <div class="col-md-4">
-          <div class="shoe-card">
-            <img src="images/Baby bluewhite knu skool vans .jpg" alt="Baby bluewhite knu skool vans" loading="lazy">
-            <div class="shoe-card-body">
-              <p class="shoe-brand-label">Vans</p>
-              <h5>Baby bluewhite knu skool vans</h5>
-              <p class="text-muted mb-1">Sizes 32–44</p>
-              <span class="price-tag">KES 4,000</span>
-            </div>
-          </div>
-        </div>
-
-         <div class="col-md-4">
-          <div class="shoe-card">
-            <img src="images/DustyBlue Knu Skool.jpg" alt="Dustyblue Knu Skool" loading="lazy">
-            <div class="shoe-card-body">
-              <p class="shoe-brand-label">Vans</p>
-              <h5>Dustyblue Knu Skool</h5>
-              <p class="text-muted mb-1">Sizes 32–44</p>
-              <span class="price-tag">KES 4,000</span>
-            </div>
-          </div>
-        </div>
-
-         <div class="col-md-4">
-          <div class="shoe-card">
-            <img src="images/Green Knu Vans feminino.jpg" alt="Green Knu Vans feminino" loading="lazy">
-            <div class="shoe-card-body">
-              <p class="shoe-brand-label">Vans</p>
-              <h5>Green Knu Vans feminino</h5>
-              <p class="text-muted mb-1">Sizes 32–44</p>
-              <span class="price-tag">KES 4,000</span>
-            </div>
-          </div>
-        </div>
-
-         <div class="col-md-4">
-          <div class="shoe-card">
-            <img src="images/Grey Knu Vans.jpg" alt="Grey Knu Vans" loading="lazy">
-            <div class="shoe-card-body">
-              <p class="shoe-brand-label">Vans</p>
-              <h5>Grey Knu Vans</h5>
-              <p class="text-muted mb-1">Sizes 32–44</p>
-              <span class="price-tag">KES 4,000</span>
-            </div>
-          </div>
-        </div>
-
-         <div class="col-md-4">
-          <div class="shoe-card">
-            <img src="images/Red Vans Knu Skool.jpg" alt="Red Vans Knu Skool" loading="lazy">
-            <div class="shoe-card-body">
-              <p class="shoe-brand-label">Vans</p>
-              <h5>Red Vans Knu Skool</h5>
-              <p class="text-muted mb-1">Sizes 32–44</p>
-              <span class="price-tag">KES 4,000</span>
-            </div>
-          </div>
-        </div>
-
-         <div class="col-md-4">
-          <div class="shoe-card">
-            <img src="images/Vans knu rosa.jpg" alt="Vans knu rosa" loading="lazy">
-            <div class="shoe-card-body">
-              <p class="shoe-brand-label">Vans</p>
-              <h5>Vans knu rosa</h5>
-              <p class="text-muted mb-1">Sizes 32–44</p>
-              <span class="price-tag">KES 4,000</span>
-            </div>
-          </div>
-        </div>
-        
-         <div class="col-md-4">
-          <div class="shoe-card">
-            <img src="images/Vans Knu Shopee.jpg" alt="Vans Knu Shopee" loading="lazy">
-            <div class="shoe-card-body">
-              <p class="shoe-brand-label">Vans</p>
-              <h5>Vans Knu Shopee</h5>
-              <p class="text-muted mb-1">Sizes 32–44</p>
-              <span class="price-tag">KES 4,000</span>
-            </div>
-          </div>
-        </div>
-
-         <div class="col-md-4">
-          <div class="shoe-card">
-            <img src="images/Vans Knu Skool PinkWhite.jpg" alt="Vans Knu Skool PinkWhite" loading="lazy">
-            <div class="shoe-card-body">
-              <p class="shoe-brand-label">Vans</p>
-              <h5>Vans Knu Skool PinkWhite</h5>
-              <p class="text-muted mb-1">Sizes 32–44</p>
-              <span class="price-tag">KES 4,000</span>
-            </div>
-          </div>
-        </div>
-
-         <div class="col-md-4">
-          <div class="shoe-card">
-            <img src="images/Puma  Speedcat Og Black Sneaker.jpg" alt="Puma Speedcat Og Black Sneaker" loading="lazy">
-            <div class="shoe-card-body">
-              <p class="shoe-brand-label">Puma</p>
-              <h5>Puma Speedcat Og Black Sneaker</h5>
-              <p class="text-muted mb-1">Sizes 32–44</p>
-              <span class="price-tag">KES 3,800</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="shoe-card">
-            <img src="images/Puma Club 5v5 PlumPurple.jpg" alt="Puma Club 5v5 PlumPurple" loading="lazy">
-            <div class="shoe-card-body">
-              <p class="shoe-brand-label">Puma</p>
-              <h5>Puma Club 5v5 PlumPurple</h5>
-              <p class="text-muted mb-1">Sizes 32–44</p>
-              <span class="price-tag">KES 3,800</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="shoe-card">
-            <img src="images/Puma Palermo PinkBlack.jpg" alt="Puma Palermo PinkBlack" loading="lazy">
-            <div class="shoe-card-body">
-              <p class="shoe-brand-label">Puma</p>
-              <h5>Puma Palermo PinkBlack</h5>
-              <p class="text-muted mb-1">Sizes 32–44</p>
-              <span class="price-tag">KES 3,800</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="shoe-card">
-            <img src="images/Puma Palermo.jpg" alt="Puma Palermo" loading="lazy">
-            <div class="shoe-card-body">
-              <p class="shoe-brand-label">Puma</p>
-              <h5>Puma Palermo</h5>
-              <p class="text-muted mb-1">Sizes 32–44</p>
-              <span class="price-tag">KES 3,800</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="shoe-card">
-            <img src="images/Puma Speedcat darkgreen.jpg" alt="Puma Speedcat darkgreen" loading="lazy">
-            <div class="shoe-card-body">
-              <p class="shoe-brand-label">Puma</p>
-              <h5>Puma Speedcat darkgreen</h5>
-              <p class="text-muted mb-1">Sizes 32–44</p>
-              <span class="price-tag">KES 3,800</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="shoe-card">
-            <img src="images/Puma Speedcat MintGreen.jpg" alt="Puma Speedcat Mintgreen" loading="lazy">
-            <div class="shoe-card-body">
-              <p class="shoe-brand-label">Puma</p>
-              <h5>Puma Speedcat Mintgreen</h5>
-              <p class="text-muted mb-1">Sizes 32–44</p>
-              <span class="price-tag">KES 3,800</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="shoe-card">
-            <img src="images/Puma speedcat Red.jpg" alt="Puma speedcat Red" loading="lazy">
-            <div class="shoe-card-body">
-              <p class="shoe-brand-label">Puma</p>
-              <h5>Puma speedcat Red</h5>
-              <p class="text-muted mb-1">Sizes 32–44</p>
-              <span class="price-tag">KES 3,800</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="shoe-card">
-            <img src="images/puma palermo pink yellow.jpg" alt="Puma palermo pink yellow" loading="lazy">
-            <div class="shoe-card-body">
-              <p class="shoe-brand-label">Puma</p>
-              <h5>Puma palermo pink yellow</h5>
-              <p class="text-muted mb-1">Sizes 32–44</p>
-              <span class="price-tag">KES 3,800</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="shoe-card">
-            <img src="images/puma speedcat pink.jpg" alt="Puma speedcat pink" loading="lazy">
-            <div class="shoe-card-body">
-              <p class="shoe-brand-label">Puma</p>
-              <h5>Puma speedcat pink</h5>
-              <p class="text-muted mb-1">Sizes 32–44</p>
-              <span class="price-tag">KES 3,800</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="shoe-card">
-            <img src="images/Adidas Collegiate Green Sambas.jpg" alt="Adidas Collegiate Green Sambas" loading="lazy">
-            <div class="shoe-card-body">
-              <p class="shoe-brand-label">Adidas</p>
-              <h5>Adidas Collegiate Green Sambas</h5>
-              <p class="text-muted mb-1">Sizes 32–44</p>
-              <span class="price-tag">KES 3,000</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="shoe-card">
-            <img src="images/Adidas Junior Superstar.jpg" alt="Adidas Junior Superstar" loading="lazy">
-            <div class="shoe-card-body">
-              <p class="shoe-brand-label">Adidas</p>
-              <h5>Adidas Junior Superstar</h5>
-              <p class="text-muted mb-1">Sizes 32–44</p>
-              <span class="price-tag">KES 3,000</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="shoe-card">
-            <img src="images/Adidas Nwt Green Sambas.jpg" alt="Adidas Nwt Green Sambas" loading="lazy">
-            <div class="shoe-card-body">
-              <p class="shoe-brand-label">Adidas</p>
-              <h5>Adidas Nwt Green Sambas</h5>
-              <p class="text-muted mb-1">Sizes 32–44</p>
-              <span class="price-tag">KES 3,000</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="shoe-card">
-            <img src="images/Adidas og love samba.jpg" alt="Adidas og love samba" loading="lazy">
-            <div class="shoe-card-body">
-              <p class="shoe-brand-label">Adidas</p>
-              <h5>Adidas og love samba</h5>
-              <p class="text-muted mb-1">Sizes 32–44</p>
-              <span class="price-tag">KES 3,000</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="shoe-card">
-            <img src="images/Adidas 00s.jpg" alt="Adidas 00s" loading="lazy">
-            <div class="shoe-card-body">
-              <p class="shoe-brand-label">Adidas</p>
-              <h5>Adidas 00s</h5>
-              <p class="text-muted mb-1">Sizes 32–44</p>
-              <span class="price-tag">KES 3,000</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="shoe-card">
-            <img src="images/Concepts x Dunk Low SB Orange Lobster.jpg" alt="Concepts x Dunk Low SB Orange Lobster" loading="lazy">
-            <div class="shoe-card-body">
-              <p class="shoe-brand-label">Nike</p>
-              <h5>Concepts x Dunk Low SB Orange Lobster</h5>
-              <p class="text-muted mb-1">Sizes 32–44</p>
-              <span class="price-tag">KES 3,500</span>
-            </div>
-          </div>
-        </div>
-        
-        
-
-        
-
-        
-
-
-      
-
+    <div class="offcanvas-body">
+      <p class="text-muted mb-3">Want to ask about sizing, availability, or a specific colourway? Fill in below and we'll WhatsApp you back.</p>
+      <div class="mb-3">
+        <label for="enquiryShoe" class="form-label">Shoe you're interested in</label>
+        <input type="text" class="form-control" id="enquiryShoe" placeholder="e.g. Travis Scott AJ1 Yellow Toe">
       </div>
+      <div class="mb-3">
+        <label for="enquiryName" class="form-label">Your Name</label>
+        <input type="text" class="form-control" id="enquiryName" placeholder="e.g. Aisha Wanjiku">
+      </div>
+      <div class="mb-3">
+        <label for="enquiryPhone" class="form-label">WhatsApp Number</label>
+        <input type="text" class="form-control" id="enquiryPhone" placeholder="e.g. 0712345678">
+      </div>
+      <a href="contact.html" class="btn btn-accent w-100">Send via Contact Page</a>
     </div>
-  </section>
+  </div>
 
-  <footer class="footer-soleva">
+  <main id="main-content">
+    <header class="hero" style="padding: 3.5rem 0;">
+      <div class="container text-center">
+        <h1 style="font-size:2.2rem;">Our Shoes</h1>
+        <p class="lead mb-0">Genuine kicks, honest prices. Pick your pair.</p>
+      </div>
+    </header>
+
+    <section class="section" aria-labelledby="products-heading">
+      <div class="container">
+
+        <div class="filter-bar" role="group" aria-label="Filter products by brand">
+          <button class="filter-btn active" data-brand="all" aria-pressed="true">All</button>
+          <button class="filter-btn" data-brand="Nike" aria-pressed="false">Nike</button>
+          <button class="filter-btn" data-brand="Jordans" aria-pressed="false">Jordans</button>
+          <button class="filter-btn" data-brand="Vans" aria-pressed="false">Vans</button>
+          <button class="filter-btn" data-brand="Puma" aria-pressed="false">Puma</button>
+          <button class="filter-btn" data-brand="Adidas" aria-pressed="false">Adidas</button>
+        </div>
+
+        <div class="text-end mb-4">
+          <button class="btn btn-outline-accent" data-bs-toggle="offcanvas" data-bs-target="#enquiryOffcanvas"
+            aria-controls="enquiryOffcanvas">Enquire About a Shoe</button>
+        </div>
+
+        <h2 id="products-heading" class="visually-hidden">All Products</h2>
+
+        <div class="row g-4">
+
+          <div class="col-md-4 product-item" data-brand="Nike">
+            <article class="shoe-card">
+              <img src="images/Nike mind 001.jpg" alt="Nike Mind 001" loading="lazy">
+              <div class="shoe-card-body">
+                <p class="shoe-brand-label">Nike</p>
+                <h5>Nike Mind 001</h5>
+                <p class="text-muted mb-1">Sizes 32–45</p>
+                <span class="price-tag">KES 6,000</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-4 product-item" data-brand="Nike">
+            <article class="shoe-card">
+              <img src="images/Air Force 1 x Offwhite yellow.jpg" alt="Air Force 1 x Off-White Yellow" loading="lazy">
+              <div class="shoe-card-body">
+                <p class="shoe-brand-label">Nike</p>
+                <h5>Air Force 1 x Off-White Yellow</h5>
+                <p class="text-muted mb-1">Sizes 32–44</p>
+                <span class="price-tag">KES 4,000</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-4 product-item" data-brand="Nike">
+            <article class="shoe-card">
+              <img src="images/AJ1 Low Cherrywood.jpg" alt="AJ1 Low Cherrywood" loading="lazy">
+              <div class="shoe-card-body">
+                <p class="shoe-brand-label">Nike</p>
+                <h5>AJ1 Low Cherrywood</h5>
+                <p class="text-muted mb-1">Sizes 32–43</p>
+                <span class="price-tag">KES 4,000</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-4 product-item" data-brand="Nike">
+            <article class="shoe-card">
+              <img src="images/AJ5 Retro Black.jpg" alt="AJ5 Retro Black" loading="lazy">
+              <div class="shoe-card-body">
+                <p class="shoe-brand-label">Nike</p>
+                <h5>AJ5 Retro Black</h5>
+                <p class="text-muted mb-1">Sizes 32–44</p>
+                <span class="price-tag">KES 4,500</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-4 product-item" data-brand="Nike">
+            <article class="shoe-card">
+              <img src="images/Nike Air Jordan 1 Mid Digital Pink.jpg" alt="Nike Air Jordan 1 Mid Digital Pink" loading="lazy">
+              <div class="shoe-card-body">
+                <p class="shoe-brand-label">Nike</p>
+                <h5>Air Jordan 1 Mid Digital Pink</h5>
+                <p class="text-muted mb-1">Sizes 32–46</p>
+                <span class="price-tag">KES 4,500</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-4 product-item" data-brand="Nike">
+            <article class="shoe-card">
+              <img src="images/Jordan 4 Red Brick.jpg" alt="Jordan 4 Red Brick" loading="lazy">
+              <div class="shoe-card-body">
+                <p class="shoe-brand-label">Nike</p>
+                <h5>Jordan 4 Red Brick</h5>
+                <p class="text-muted mb-1">Sizes 32–44</p>
+                <span class="price-tag">KES 4,500</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-4 product-item" data-brand="Jordans">
+            <article class="shoe-card">
+              <img src="images/Air Jordan 4 flight Club.jpg" alt="Air Jordan 4 Flight Club" loading="lazy">
+              <div class="shoe-card-body">
+                <p class="shoe-brand-label">Jordans</p>
+                <h5>Air Jordan 4 Flight Club</h5>
+                <p class="text-muted mb-1">Sizes 32–45</p>
+                <span class="price-tag">KES 4,000</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-4 product-item" data-brand="Nike">
+            <article class="shoe-card">
+              <img src="images/Nike Air Force 1 Low Shadow White Pink Magic Flamingo .jpg" alt="Air Force 1 Low Shadow Pink Flamingo" loading="lazy">
+              <div class="shoe-card-body">
+                <p class="shoe-brand-label">Nike</p>
+                <h5>Air Force 1 Low Shadow Pink Flamingo</h5>
+                <p class="text-muted mb-1">Sizes 32–45</p>
+                <span class="price-tag">KES 5,000</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-4 product-item" data-brand="Nike">
+            <article class="shoe-card">
+              <img src="images/Nike Air Force 1 Lil Yatchy .jpg" alt="Nike Air Force 1 Lil Yachty" loading="lazy">
+              <div class="shoe-card-body">
+                <p class="shoe-brand-label">Nike</p>
+                <h5>Nike Air Force 1 Lil Yachty</h5>
+                <p class="text-muted mb-1">Sizes 32–44</p>
+                <span class="price-tag">KES 4,500</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-4 product-item" data-brand="Nike">
+            <article class="shoe-card">
+              <img src="images/Nike Air Force 1 Low x Syna.jpg" alt="Nike Air Force 1 Low x Syna" loading="lazy">
+              <div class="shoe-card-body">
+                <p class="shoe-brand-label">Nike</p>
+                <h5>Nike Air Force 1 Low x Syna</h5>
+                <p class="text-muted mb-1">Sizes 32–44</p>
+                <span class="price-tag">KES 4,500</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-4 product-item" data-brand="Nike">
+            <article class="shoe-card">
+              <img src="images/Nike Air Force 1 Blue Void .jpg" alt="Nike Air Force 1 Blue Void" loading="lazy">
+              <div class="shoe-card-body">
+                <p class="shoe-brand-label">Nike</p>
+                <h5>Nike Air Force 1 Blue Void</h5>
+                <p class="text-muted mb-1">Sizes 32–44</p>
+                <span class="price-tag">KES 4,000</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-4 product-item" data-brand="Nike">
+            <article class="shoe-card">
+              <img src="images/Nike Air Jordan 1 Low WMNS Canyon Rust .jpg" alt="Air Jordan 1 Low WMNS Canyon Rust" loading="lazy">
+              <div class="shoe-card-body">
+                <p class="shoe-brand-label">Nike</p>
+                <h5>Air Jordan 1 Low WMNS Canyon Rust</h5>
+                <p class="text-muted mb-1">Sizes 32–44</p>
+                <span class="price-tag">KES 5,200</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-4 product-item" data-brand="Nike">
+            <article class="shoe-card">
+              <img src="images/Nike SB x Air Jordan 1.jpg" alt="Nike SB x Air Jordan 1" loading="lazy">
+              <div class="shoe-card-body">
+                <p class="shoe-brand-label">Nike</p>
+                <h5>Nike SB x Air Jordan 1</h5>
+                <p class="text-muted mb-1">Sizes 32–44</p>
+                <span class="price-tag">KES 4,500</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-4 product-item" data-brand="Jordans">
+            <article class="shoe-card">
+              <img src="images/Jordan retro 4.jpg" alt="Jordan Retro 4" loading="lazy">
+              <div class="shoe-card-body">
+                <p class="shoe-brand-label">Jordans</p>
+                <h5>Jordan Retro 4</h5>
+                <p class="text-muted mb-1">Sizes 32–44</p>
+                <span class="price-tag">KES 4,000</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-4 product-item" data-brand="Jordans">
+            <article class="shoe-card">
+              <img src="images/Air Jordan 4 x Nike sb.jpg" alt="Air Jordan 4 x Nike SB" loading="lazy">
+              <div class="shoe-card-body">
+                <p class="shoe-brand-label">Jordans</p>
+                <h5>Air Jordan 4 x Nike SB</h5>
+                <p class="text-muted mb-1">Sizes 32–44</p>
+                <span class="price-tag">KES 4,300</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-4 product-item" data-brand="Nike">
+            <article class="shoe-card">
+              <img src="images/Nike SB Dunk Low Pro B.jpg" alt="Nike SB Dunk Low Pro B" loading="lazy">
+              <div class="shoe-card-body">
+                <p class="shoe-brand-label">Nike</p>
+                <h5>Nike SB Dunk Low Pro B</h5>
+                <p class="text-muted mb-1">Sizes 32–44</p>
+                <span class="price-tag">KES 4,200</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-4 product-item" data-brand="Nike">
+            <article class="shoe-card">
+              <img src="images/Nike Air Force 1 x Supreme Purple.jpg" alt="Nike Air Force 1 x Supreme Purple" loading="lazy">
+              <div class="shoe-card-body">
+                <p class="shoe-brand-label">Nike</p>
+                <h5>Nike Air Force 1 x Supreme Purple</h5>
+                <p class="text-muted mb-1">Sizes 32–44</p>
+                <span class="price-tag">KES 4,200</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-4 product-item" data-brand="Nike">
+            <article class="shoe-card">
+              <img src="images/Nike Air Force 1 x Surpreme Meangreen.jpg" alt="Nike Air Force 1 x Supreme Mean Green" loading="lazy">
+              <div class="shoe-card-body">
+                <p class="shoe-brand-label">Nike</p>
+                <h5>Nike Air Force 1 x Supreme Mean Green</h5>
+                <p class="text-muted mb-1">Sizes 32–44</p>
+                <span class="price-tag">KES 4,200</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-4 product-item" data-brand="Nike">
+            <article class="shoe-card">
+              <img src="images/Nike SB Dunk Yellow Bears.jpg" alt="Nike SB Dunk Yellow Bears" loading="lazy">
+              <div class="shoe-card-body">
+                <p class="shoe-brand-label">Nike</p>
+                <h5>Nike SB Dunk Yellow Bears</h5>
+                <p class="text-muted mb-1">Sizes 32–44</p>
+                <span class="price-tag">KES 4,000</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-4 product-item" data-brand="Nike">
+            <article class="shoe-card">
+              <img src="images/Travis AJ1 Military blue.jpg" alt="Travis Scott AJ1 Military Blue" loading="lazy">
+              <div class="shoe-card-body">
+                <p class="shoe-brand-label">Nike</p>
+                <h5>Travis Scott AJ1 Military Blue</h5>
+                <p class="text-muted mb-1">Sizes 32–44</p>
+                <span class="price-tag">KES 4,800</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-4 product-item" data-brand="Nike">
+            <article class="shoe-card">
+              <img src="images/Travis Scott AJ1  Black Phantom Scarabee Noir.jpg" alt="Travis Scott AJ1 Black Phantom" loading="lazy">
+              <div class="shoe-card-body">
+                <p class="shoe-brand-label">Nike</p>
+                <h5>Travis Scott AJ1 Black Phantom</h5>
+                <p class="text-muted mb-1">Sizes 32–44</p>
+                <span class="price-tag">KES 4,800</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-4 product-item" data-brand="Nike">
+            <article class="shoe-card">
+              <img src="images/Travis Scott AJ1 Ridgerock.jpg" alt="Travis Scott AJ1 Ridgerock" loading="lazy">
+              <div class="shoe-card-body">
+                <p class="shoe-brand-label">Nike</p>
+                <h5>Travis Scott AJ1 Ridgerock</h5>
+                <p class="text-muted mb-1">Sizes 32–44</p>
+                <span class="price-tag">KES 4,800</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-4 product-item" data-brand="Nike">
+            <article class="shoe-card">
+              <img src="images/Travis Scott AJ1 Washed Pink.jpg" alt="Travis Scott AJ1 Washed Pink" loading="lazy">
+              <div class="shoe-card-body">
+                <p class="shoe-brand-label">Nike</p>
+                <h5>Travis Scott AJ1 Washed Pink</h5>
+                <p class="text-muted mb-1">Sizes 32–44</p>
+                <span class="price-tag">KES 4,800</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-4 product-item" data-brand="Nike">
+            <article class="shoe-card">
+              <img src="images/Travis Scott AJ1 Yellow Toe.jpg" alt="Travis Scott AJ1 Yellow Toe" loading="lazy">
+              <div class="shoe-card-body">
+                <p class="shoe-brand-label">Nike</p>
+                <h5>Travis Scott AJ1 Yellow Toe</h5>
+                <p class="text-muted mb-1">Sizes 32–44</p>
+                <span class="price-tag">KES 4,800</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-4 product-item" data-brand="Nike">
+            <article class="shoe-card">
+              <img src="images/Travis Scott Black Phantom AJ1.jpg" alt="Travis Scott Black Phantom AJ1" loading="lazy">
+              <div class="shoe-card-body">
+                <p class="shoe-brand-label">Nike</p>
+                <h5>Travis Scott Black Phantom AJ1</h5>
+                <p class="text-muted mb-1">Sizes 32–44</p>
+                <span class="price-tag">KES 4,800</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-4 product-item" data-brand="Vans">
+            <article class="shoe-card">
+              <img src="images/Baby bluewhite knu skool vans .jpg" alt="Vans Knu Skool Baby Blue White" loading="lazy">
+              <div class="shoe-card-body">
+                <p class="shoe-brand-label">Vans</p>
+                <h5>Knu Skool Baby Blue White</h5>
+                <p class="text-muted mb-1">Sizes 32–44</p>
+                <span class="price-tag">KES 4,000</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-4 product-item" data-brand="Vans">
+            <article class="shoe-card">
+              <img src="images/DustyBlue Knu Skool.jpg" alt="Vans Knu Skool Dusty Blue" loading="lazy">
+              <div class="shoe-card-body">
+                <p class="shoe-brand-label">Vans</p>
+                <h5>Knu Skool Dusty Blue</h5>
+                <p class="text-muted mb-1">Sizes 32–44</p>
+                <span class="price-tag">KES 4,000</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-4 product-item" data-brand="Vans">
+            <article class="shoe-card">
+              <img src="images/Green Knu Vans feminino.jpg" alt="Vans Knu Skool Green Feminino" loading="lazy">
+              <div class="shoe-card-body">
+                <p class="shoe-brand-label">Vans</p>
+                <h5>Knu Skool Green Feminino</h5>
+                <p class="text-muted mb-1">Sizes 32–44</p>
+                <span class="price-tag">KES 4,000</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-4 product-item" data-brand="Vans">
+            <article class="shoe-card">
+              <img src="images/Grey Knu Vans.jpg" alt="Vans Knu Skool Grey" loading="lazy">
+              <div class="shoe-card-body">
+                <p class="shoe-brand-label">Vans</p>
+                <h5>Knu Skool Grey</h5>
+                <p class="text-muted mb-1">Sizes 32–44</p>
+                <span class="price-tag">KES 4,000</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-4 product-item" data-brand="Vans">
+            <article class="shoe-card">
+              <img src="images/Red Vans Knu Skool.jpg" alt="Vans Knu Skool Red" loading="lazy">
+              <div class="shoe-card-body">
+                <p class="shoe-brand-label">Vans</p>
+                <h5>Knu Skool Red</h5>
+                <p class="text-muted mb-1">Sizes 32–44</p>
+                <span class="price-tag">KES 4,000</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-4 product-item" data-brand="Vans">
+            <article class="shoe-card">
+              <img src="images/Vans knu rosa.jpg" alt="Vans Knu Skool Rosa Pink" loading="lazy">
+              <div class="shoe-card-body">
+                <p class="shoe-brand-label">Vans</p>
+                <h5>Knu Skool Rosa Pink</h5>
+                <p class="text-muted mb-1">Sizes 32–44</p>
+                <span class="price-tag">KES 4,000</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-4 product-item" data-brand="Vans">
+            <article class="shoe-card">
+              <img src="images/Vans Knu Shopee.jpg" alt="Vans Knu Skool Shopee Edition" loading="lazy">
+              <div class="shoe-card-body">
+                <p class="shoe-brand-label">Vans</p>
+                <h5>Knu Skool Shopee Edition</h5>
+                <p class="text-muted mb-1">Sizes 32–44</p>
+                <span class="price-tag">KES 4,000</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-4 product-item" data-brand="Vans">
+            <article class="shoe-card">
+              <img src="images/Vans Knu Skool PinkWhite.jpg" alt="Vans Knu Skool Pink White" loading="lazy">
+              <div class="shoe-card-body">
+                <p class="shoe-brand-label">Vans</p>
+                <h5>Knu Skool Pink White</h5>
+                <p class="text-muted mb-1">Sizes 32–44</p>
+                <span class="price-tag">KES 4,000</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-4 product-item" data-brand="Puma">
+            <article class="shoe-card">
+              <img src="images/Puma  Speedcat Og Black Sneaker.jpg" alt="Puma Speedcat OG Black" loading="lazy">
+              <div class="shoe-card-body">
+                <p class="shoe-brand-label">Puma</p>
+                <h5>Speedcat OG Black</h5>
+                <p class="text-muted mb-1">Sizes 32–44</p>
+                <span class="price-tag">KES 3,800</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-4 product-item" data-brand="Puma">
+            <article class="shoe-card">
+              <img src="images/Puma Club 5v5 PlumPurple.jpg" alt="Puma Club 5v5 Plum Purple" loading="lazy">
+              <div class="shoe-card-body">
+                <p class="shoe-brand-label">Puma</p>
+                <h5>Club 5v5 Plum Purple</h5>
+                <p class="text-muted mb-1">Sizes 32–44</p>
+                <span class="price-tag">KES 3,800</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-4 product-item" data-brand="Puma">
+            <article class="shoe-card">
+              <img src="images/Puma Palermo PinkBlack.jpg" alt="Puma Palermo Pink Black" loading="lazy">
+              <div class="shoe-card-body">
+                <p class="shoe-brand-label">Puma</p>
+                <h5>Palermo Pink Black</h5>
+                <p class="text-muted mb-1">Sizes 32–44</p>
+                <span class="price-tag">KES 3,800</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-4 product-item" data-brand="Puma">
+            <article class="shoe-card">
+              <img src="images/Puma Palermo.jpg" alt="Puma Palermo Classic" loading="lazy">
+              <div class="shoe-card-body">
+                <p class="shoe-brand-label">Puma</p>
+                <h5>Palermo Classic</h5>
+                <p class="text-muted mb-1">Sizes 32–44</p>
+                <span class="price-tag">KES 3,800</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-4 product-item" data-brand="Puma">
+            <article class="shoe-card">
+              <img src="images/Puma Speedcat darkgreen.jpg" alt="Puma Speedcat Dark Green" loading="lazy">
+              <div class="shoe-card-body">
+                <p class="shoe-brand-label">Puma</p>
+                <h5>Speedcat Dark Green</h5>
+                <p class="text-muted mb-1">Sizes 32–44</p>
+                <span class="price-tag">KES 3,800</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-4 product-item" data-brand="Puma">
+            <article class="shoe-card">
+              <img src="images/Puma Speedcat MintGreen.jpg" alt="Puma Speedcat Mint Green" loading="lazy">
+              <div class="shoe-card-body">
+                <p class="shoe-brand-label">Puma</p>
+                <h5>Speedcat Mint Green</h5>
+                <p class="text-muted mb-1">Sizes 32–44</p>
+                <span class="price-tag">KES 3,800</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-4 product-item" data-brand="Puma">
+            <article class="shoe-card">
+              <img src="images/Puma speedcat Red.jpg" alt="Puma Speedcat Red" loading="lazy">
+              <div class="shoe-card-body">
+                <p class="shoe-brand-label">Puma</p>
+                <h5>Speedcat Red</h5>
+                <p class="text-muted mb-1">Sizes 32–44</p>
+                <span class="price-tag">KES 3,800</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-4 product-item" data-brand="Puma">
+            <article class="shoe-card">
+              <img src="images/puma palermo pink yellow.jpg" alt="Puma Palermo Pink Yellow" loading="lazy">
+              <div class="shoe-card-body">
+                <p class="shoe-brand-label">Puma</p>
+                <h5>Palermo Pink Yellow</h5>
+                <p class="text-muted mb-1">Sizes 32–44</p>
+                <span class="price-tag">KES 3,800</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-4 product-item" data-brand="Puma">
+            <article class="shoe-card">
+              <img src="images/puma speedcat pink.jpg" alt="Puma Speedcat Pink" loading="lazy">
+              <div class="shoe-card-body">
+                <p class="shoe-brand-label">Puma</p>
+                <h5>Speedcat Pink</h5>
+                <p class="text-muted mb-1">Sizes 32–44</p>
+                <span class="price-tag">KES 3,800</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-4 product-item" data-brand="Adidas">
+            <article class="shoe-card">
+              <img src="images/Adidas Collegiate Green Sambas.jpg" alt="Adidas Collegiate Green Sambas" loading="lazy">
+              <div class="shoe-card-body">
+                <p class="shoe-brand-label">Adidas</p>
+                <h5>Collegiate Green Sambas</h5>
+                <p class="text-muted mb-1">Sizes 32–44</p>
+                <span class="price-tag">KES 3,000</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-4 product-item" data-brand="Adidas">
+            <article class="shoe-card">
+              <img src="images/Adidas Junior Superstar.jpg" alt="Adidas Junior Superstar" loading="lazy">
+              <div class="shoe-card-body">
+                <p class="shoe-brand-label">Adidas</p>
+                <h5>Junior Superstar</h5>
+                <p class="text-muted mb-1">Sizes 32–44</p>
+                <span class="price-tag">KES 3,000</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-4 product-item" data-brand="Adidas">
+            <article class="shoe-card">
+              <img src="images/Adidas Nwt Green Sambas.jpg" alt="Adidas NWT Green Sambas" loading="lazy">
+              <div class="shoe-card-body">
+                <p class="shoe-brand-label">Adidas</p>
+                <h5>NWT Green Sambas</h5>
+                <p class="text-muted mb-1">Sizes 32–44</p>
+                <span class="price-tag">KES 3,000</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-4 product-item" data-brand="Adidas">
+            <article class="shoe-card">
+              <img src="images/Adidas og love samba.jpg" alt="Adidas OG Love Samba" loading="lazy">
+              <div class="shoe-card-body">
+                <p class="shoe-brand-label">Adidas</p>
+                <h5>OG Love Samba</h5>
+                <p class="text-muted mb-1">Sizes 32–44</p>
+                <span class="price-tag">KES 3,000</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-4 product-item" data-brand="Adidas">
+            <article class="shoe-card">
+              <img src="images/Adidas 00s.jpg" alt="Adidas 00s" loading="lazy">
+              <div class="shoe-card-body">
+                <p class="shoe-brand-label">Adidas</p>
+                <h5>Adidas 00s</h5>
+                <p class="text-muted mb-1">Sizes 32–44</p>
+                <span class="price-tag">KES 3,000</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-4 product-item" data-brand="Nike">
+            <article class="shoe-card">
+              <img src="images/Concepts x Dunk Low SB Orange Lobster.jpg" alt="Concepts x Dunk Low SB Orange Lobster" loading="lazy">
+              <div class="shoe-card-body">
+                <p class="shoe-brand-label">Nike</p>
+                <h5>Concepts x Dunk Low SB Orange Lobster</h5>
+                <p class="text-muted mb-1">Sizes 32–44</p>
+                <span class="price-tag">KES 3,500</span>
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-soleva" role="contentinfo">
     <div class="container">
       <div class="row">
         <div class="col-md-4 mb-3">
@@ -656,7 +691,7 @@
         </div>
         <div class="col-md-4 mb-3">
           <h5>Visit Us</h5>
-          <p>Sarit Centre,3rd Floor, Westlands<br>Nairobi, Kenya<br>Mon–Sat: 9am – 7pm</p>
+          <p>Sarit Centre, 3rd Floor, Westlands<br>Nairobi, Kenya<br>Mon–Sat: 9am – 7pm</p>
         </div>
       </div>
       <div class="footer-bottom">
@@ -665,6 +700,7 @@
     </div>
   </footer>
 
+  <button id="backToTop" aria-label="Back to top">&#8679;</button>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
