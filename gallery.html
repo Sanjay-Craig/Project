@@ -12,10 +12,13 @@
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-soleva navbar-dark sticky-top">
+  <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+
+  <nav class="navbar navbar-expand-lg navbar-soleva navbar-dark sticky-top" role="navigation" aria-label="Main navigation">
     <div class="container">
-      <a class="navbar-brand" href="index.html">C<span>&amp;</span>A</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <a class="navbar-brand" href="index.html" aria-label="C&A Home">C<span>&amp;</span>A</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navMenu">
@@ -24,88 +27,115 @@
           <li class="nav-item"><a class="nav-link" href="product.html">Product</a></li>
           <li class="nav-item"><a class="nav-link" href="brands.html">Brands</a></li>
           <li class="nav-item"><a class="nav-link" href="offers.html">Offers</a></li>
-          <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link active" href="gallery.html" aria-current="page">Gallery</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="faqs.html">FAQs</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
           <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
-            <button id="themeToggleBtn" class="theme-toggle-btn">Dark Mode</button>
+            <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Toggle dark mode">Dark Mode</button>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <header class="hero" style="padding: 3.5rem 0;">
-    <div class="container text-center">
-      <h1 style="font-size:2.2rem;">Gallery</h1>
-      <p class="lead mb-0">A look at our stall, our stock and our customers picks.</p>
-    </div>
-  </header>
-
-  <section class="section">
-    <div class="container">
-      <div class="row g-3">
-
-        <div class="col-md-4 col-6">
-          <div class="gallery-img">
-            <img src="images/nike-airforce.jpg" alt="Nike Air Force at C&A stall" loading="lazy">
-          </div>
+  <!-- Gallery Lightbox Modal -->
+  <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-modal="true" role="dialog">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-white" id="galleryModalLabel">Gallery</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close lightbox"></button>
         </div>
-
-        <div class="col-md-4 col-6">
-          <div class="gallery-img">
-            <img src="images/Puma Speedcat darkgreen.jpg" alt="Puma sneakers at C&A" loading="lazy">
-          </div>
+        <div class="modal-body p-2">
+          <img id="modalImage" src="" alt="" class="img-fluid">
         </div>
-
-        <div class="col-md-4 col-6">
-          <div class="gallery-img">
-            <img src="images/Baby bluewhite knu skool vans .jpg" alt="Vans Knu Skool display" loading="lazy">
-          </div>
-        </div>
-
-        <div class="col-md-4 col-6">
-          <div class="gallery-img">
-            <img src="images/Jordan 4 Red Brick.jpg" alt="Jordan 4 on display" loading="lazy">
-          </div>
-        </div>
-
-        <div class="col-md-4 col-6">
-          <div class="gallery-img">
-            <img src="images/Travis Scott AJ1 Yellow Toe.jpg" alt="Travis Scott  AJ1 Yellow Toe" loading="lazy">
-          </div>
-        </div>
-
-        <div class="col-md-4 col-6">
-          <div class="gallery-img">
-            <img src="images/logo.jpg.jpeg" alt="C&A stall front view" loading="lazy">
-          </div>
-        </div>
-
-        <div class="col-md-4 col-6">
-          <div class="gallery-img">
-            <img src="images/Nike Air Force 1 Low x Syna.jpg" alt="Nike Air Force 1 Low x Syna on shelf" loading="lazy">
-          </div>
-        </div>
-
-        <div class="col-md-4 col-6">
-          <div class="gallery-img">
-            <img src="images/Nike mind 001.jpg" alt="Nike mind 001 display" loading="lazy">
-          </div>
-        </div>
-
-        <div class="col-md-4 col-6">
-          <div class="gallery-img">
-            <img src="images/Inside.jpg" alt="Inside the C&A stall" loading="lazy">
-          </div>
-        </div>
-
       </div>
     </div>
-  </section>
+  </div>
 
-  <footer class="footer-soleva">
+  <main id="main-content">
+    <header class="hero" style="padding: 3.5rem 0;">
+      <div class="container text-center">
+        <h1 style="font-size:2.2rem;">Gallery</h1>
+        <p class="lead mb-0">A look at our stall, our stock and our customers' picks. Click any photo to enlarge.</p>
+      </div>
+    </header>
+
+    <section class="section" aria-labelledby="gallery-heading">
+      <h2 id="gallery-heading" class="visually-hidden">Photo Gallery</h2>
+      <div class="container">
+        <div class="row g-3">
+
+          <div class="col-md-4 col-6">
+            <div class="gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal"
+              role="button" tabindex="0" aria-label="View Nike Air Force">
+              <img src="images/nike-airforce.jpg" alt="Nike Air Force at C&A stall" loading="lazy">
+            </div>
+          </div>
+
+          <div class="col-md-4 col-6">
+            <div class="gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal"
+              role="button" tabindex="0" aria-label="View Puma Speedcat Dark Green">
+              <img src="images/Puma Speedcat darkgreen.jpg" alt="Puma Speedcat Dark Green at C&A" loading="lazy">
+            </div>
+          </div>
+
+          <div class="col-md-4 col-6">
+            <div class="gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal"
+              role="button" tabindex="0" aria-label="View Vans Knu Skool">
+              <img src="images/Baby bluewhite knu skool vans .jpg" alt="Vans Knu Skool Baby Blue display" loading="lazy">
+            </div>
+          </div>
+
+          <div class="col-md-4 col-6">
+            <div class="gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal"
+              role="button" tabindex="0" aria-label="View Jordan 4 Red Brick">
+              <img src="images/Jordan 4 Red Brick.jpg" alt="Jordan 4 Red Brick on display" loading="lazy">
+            </div>
+          </div>
+
+          <div class="col-md-4 col-6">
+            <div class="gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal"
+              role="button" tabindex="0" aria-label="View Travis Scott AJ1 Yellow Toe">
+              <img src="images/Travis Scott AJ1 Yellow Toe.jpg" alt="Travis Scott AJ1 Yellow Toe" loading="lazy">
+            </div>
+          </div>
+
+          <div class="col-md-4 col-6">
+            <div class="gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal"
+              role="button" tabindex="0" aria-label="View C&A stall front">
+              <img src="images/logo.jpg.jpeg" alt="C&A stall front view at Sarit Centre" loading="lazy">
+            </div>
+          </div>
+
+          <div class="col-md-4 col-6">
+            <div class="gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal"
+              role="button" tabindex="0" aria-label="View Nike Air Force 1 Low x Syna">
+              <img src="images/Nike Air Force 1 Low x Syna.jpg" alt="Nike Air Force 1 Low x Syna on shelf" loading="lazy">
+            </div>
+          </div>
+
+          <div class="col-md-4 col-6">
+            <div class="gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal"
+              role="button" tabindex="0" aria-label="View Nike Mind 001">
+              <img src="images/Nike mind 001.jpg" alt="Nike Mind 001 display" loading="lazy">
+            </div>
+          </div>
+
+          <div class="col-md-4 col-6">
+            <div class="gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal"
+              role="button" tabindex="0" aria-label="View inside the C&A stall">
+              <img src="images/Inside.jpg" alt="Inside the C&A stall at Sarit Centre" loading="lazy">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-soleva" role="contentinfo">
     <div class="container">
       <div class="row">
         <div class="col-md-4 mb-3">
@@ -132,6 +162,7 @@
     </div>
   </footer>
 
+  <button id="backToTop" aria-label="Back to top">&#8679;</button>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
